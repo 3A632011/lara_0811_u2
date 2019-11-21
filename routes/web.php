@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+//Route::get('/', function () {
     //return 'welcome';
-    return view('welcome');
+  //  return view('welcome');
     //return redirect('welcome');
-});
+//});
 //Route::get('welcome',function(){
 //    return'welcome';
 //});
@@ -38,3 +38,5 @@ Route::group(['prefix'=>'admin'],function(){
     });
 });
 
+Route::get('/',['as'=>'home.index','uses'=>
+    'HomeController@index']);
