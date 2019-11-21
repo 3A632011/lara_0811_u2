@@ -20,12 +20,12 @@ Route::get('/', function () {
 //    return'welcome';
 //});
 
-Route::get('hello/{name?}',['as'=>'hello.index',function($name='Everybody'){
-    return'Hello,'.$name;
+Route::get('say/{name?}',['as'=>'hello.index',function($name='Everybody'){
+    return view('welcome');
 }]);
 
-Route::get('hi/{name?}',function($name = 'Everybody'){
-    return'hi,'.$name;
-});
+//Route::get('hi/{name?}',function($name = 'Everybody'){
+ //   return'hi,'.$name;
+//});
 
 
