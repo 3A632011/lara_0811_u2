@@ -13,9 +13,13 @@
 
 Route::get('/', function () {
     //return 'welcome';
-    //return view('welcome');
-    return redirect('welcome');
+    return view('welcome');
+    //return redirect('welcome');
 });
-Route::get('welcome',function(){
-    return'welcome';
+//Route::get('welcome',function(){
+//    return'welcome';
+//});
+
+Route::get('hello/{name?}',function($name = 'Everybody'){
+    return'Hello,'.$name;
 });
